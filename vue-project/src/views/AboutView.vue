@@ -1,6 +1,35 @@
 <template>
   <div class="about">
-    <iframe src="https://calendar.google.com/calendar/embed?src=1108a61ce0013a3354a9ee8694003b7ba7a293c543c0b05a01916e6005f9acc9%40group.calendar.google.com&ctz=Asia%2FTaipei" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+    <div class="container">
+      <br />
+      <h1>會員資料查詢</h1>
+      <p>請輸入會員資料</p>
+      <br />
+      <form>
+        <div class="form-group">
+          <label for="name" class="mx-5">會員姓名</label>
+          <input
+            type="text"
+            class="form-control "
+            id="name"
+            aria-describedby="emailHelp"
+            placeholder="請輸入會員姓名"
+          />
+        </div>
+        <br />
+        <div class="form-group">
+          <label for="memberNumber">會員編號</label>
+          <input
+            type="text"
+            class="form-control"
+            id="memberNumber"
+            placeholder="請輸入會員編號"
+          />
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary">查詢</button>
+      </form>
+    </div>
   </div>
 </template>
 
